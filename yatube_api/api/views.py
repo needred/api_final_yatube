@@ -47,11 +47,6 @@ class CommentViewSet(viewsets.ModelViewSet):
         post = get_object_or_404(Post, pk=post_id)
         serializer.save(author=self.request.user, post=post)
 
-    def perform_update(self, serializer):
-        post_id = self.kwargs.get('post_id')
-        post = get_object_or_404(Post, pk=post_id)
-        serializer.save(author=self.request.user, post=post)
-
 
 class FollowViewSet(viewsets.ModelViewSet):
     serializer_class = FollowSerializer
@@ -60,7 +55,7 @@ class FollowViewSet(viewsets.ModelViewSet):
     search_fields = ["=following__username", "=user__username"]
 
     def get_queryset(self):
-        return self.request.user.follower.all()
+        return self.request.user.followers.all()
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
