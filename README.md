@@ -4,7 +4,7 @@
 * Настроены права доступа для пользователей, аутентификация через JWT.
 
 ### Технологический стек
-Django Rest Framework, JSON, JWT + Djoser, Redoc, Postman
+[![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat&color=008080)](https://www.django-rest-framework.org/) [![JSON](https://img.shields.io/badge/-JSON-464646?style=flat&logo=JSON&logoColor=56C0C0&color=008080)](https://www.json.org/json-en.html) [![JWT](https://img.shields.io/badge/-JWT-464646?style=flat&color=008080)](https://jwt.io/) [![ReDoc](https://img.shields.io/badge/-ReDoc-464646?style=flat&color=008080)](https://redoc.ly/redoc/) [![Postman](https://img.shields.io/badge/-Postman-464646?style=flat&logo=Postman&logoColor=56C0C0&color=008080)](https://www.postman.com/)
 
 ### Запуск приложения
 1) Клонировать репозиторий и перейти в него в командной строке:
